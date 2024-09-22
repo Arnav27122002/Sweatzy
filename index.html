@@ -13,15 +13,47 @@
       align-items: center;
       background: linear-gradient(to right, #ff99cc, #6699ff);
       font-family: 'Arial', sans-serif;
+      position: relative;
     }
+
     h1 {
       color: white;
       font-size: 4rem;
       text-shadow: 2px 2px 5px rgba(0, 0, 0, 0.3);
     }
+
+    .button-container {
+      position: absolute;
+      bottom: 20px;
+      width: 100%;
+      display: flex;
+      justify-content: space-between;
+      padding: 0 20px;
+    }
+
+    .button-container button {
+      padding: 10px 20px;
+      font-size: 1.2rem;
+      border: none;
+      cursor: pointer;
+      border-radius: 5px;
+      color: white;
+      background-color: #333;
+      box-shadow: 2px 2px 10px rgba(0, 0, 0, 0.2);
+    }
+
+    .button-container button:hover {
+      background-color: #555;
+    }
   </style>
 </head>
 <body>
   <h1>Always know better Sweatzy!</h1>
+
+  <div class="button-container">
+    <button onclick="alert('Good enough!')">SHARANYA</button>
+    <button onclick="alert('Not good enough!')">ARYA</button>
+  </div>
+
 </body>
 </html>
